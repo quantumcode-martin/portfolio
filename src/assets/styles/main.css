@@ -1,0 +1,22 @@
+
+html {
+    scroll-behavior: smooth;
+  }
+
+h1{
+    color: #bbbbbb;
+}
+
+.section {
+    /* //background-color: #ffffffb9; */
+    position: relative;
+    display: inline-block;
+    width: 75%;
+    height: 85vh;
+    margin: 0 auto;
+    /* padding-top: 10vh; */
+    padding: 15vh 1rem 1rem 1rem;
+    border-radius: 1rem;
+    color: rgb(54, 54, 54);
+    align-items: center;
+}
