@@ -1,5 +1,5 @@
 <template>
-  <div class="card-wrap" @mousemove="handleMouseMove" @mouseenter="handleMouseEnter" @mouseleave="handleMouseLeave"
+  <div class="card-wrap" @mousemove="handleMouseMove" @mouseenter="handleMouseEnter" @mouseleave="handleMouseLeave" @mousedown="handleMouseDown"
     ref="card">
     <div class="card" :style="cardStyle">
       <div class="card-bg" :style="[cardBgTransform, cardBgImage]"></div>
@@ -10,6 +10,12 @@
           <p>
             <slot name="content">Default Content</slot>
           </p>
+      </div>
+      <div class="card-tech">
+        <slot name="techs">
+          <p>1</p>
+          <p>2</p>
+        </slot>
       </div>
     </div>
   </div>
@@ -30,7 +36,8 @@ export default {
     imageOffsetY: {
       type: Number,
       default: 0
-    }
+    },
+    projectName: String
   },
 
   data: () => ({
@@ -84,6 +91,9 @@ export default {
         this.mouseX = 0
         this.mouseY = 0
       }, 1000)
+    },
+    handleMouseDown () {
+      console.log(this.projectName)
     }
   }
 }
@@ -148,7 +158,7 @@ h1+p, p+p {
     .card-info p {
       opacity: 1;
     }
-    .card-info, .card-info p {
+    .card-info, .card-info p , .card-tech, .card-tech p {
       transition: 0.6s $hoverEasing;
     }
     .card-info:after {
@@ -156,6 +166,40 @@ h1+p, p+p {
       opacity: 1;
       transform: translateY(0);
     }
+/*
+    .card-tech {
+      transform: translateX(0);
+    }
+*/
+    .card-tech {
+      opacity: 1;
+      :slotted(p) {
+        transition-duration: 0.4s;
+        transition-property:  $hoverEasing;
+        // transition-delay: 1s;
+        // transition-delay: calc(initial - 0.5s);
+        transform: translateX(0);
+      }
+
+      :nth-child(1) {
+        transition-delay: 0s
+      }
+      :nth-child(2) {
+        transition-delay: 0.1s
+      }
+      :nth-child(3) {
+        transition-delay: 0.2s
+      }
+
+    }
+
+    /*
+    .card-tech:after {
+      transition: 5s $hoverEasing;
+      opacity: 1;
+      transform: translateX(0);
+    }*/
+
     .card-bg {
       transition:
         0.6s $hoverEasing,
@@ -219,6 +263,7 @@ h1+p, p+p {
     opacity: 0;
     text-shadow: rgba(black, 1) 0 2px 3px;
     transition: 0.6s 1.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+
   }
 
   * {
@@ -247,4 +292,64 @@ h1+p, p+p {
   font-weight: 700;
   text-shadow: rgba(black, 0.5) 0 10px 10px;
 }
+
+// .card-tech
+
+.card-tech {
+  padding: 8px 10px;
+  position: absolute;
+  top: 0;
+  // left: 0;
+  color: #fff;
+  //transform: translateX(calc(-50px));
+  transition: 0.6s 1.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+
+  :slotted(p) {
+    position: relative;
+    transform: translateX(-50px);
+    margin: 7px;
+    color: white;
+    text-shadow: rgba(black, 1) 0 2px 3px;
+    transition: 0.6s 1.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+    svg {
+      filter: drop-shadow(0px 0px 4px rgb(255, 255, 255, 0.7))
+    }
+  }
+
+  * {
+    position: relative;
+    z-index: 1;
+  }
+
+  :nth-child(1) {
+    transition-delay: 0.5s
+  }
+  :nth-child(2) {
+    transition-delay: 0.6s
+  }
+  :nth-child(3) {
+    transition-delay: 0.7s
+  }
+
+  /*
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, transparent 0%, rgba(#000, 0.6) 100%);
+    background-blend-mode: overlay;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: 5s 1s $returnEasing;
+  }*/
+
+}
+
+/*.card-tech p {
+  color: white;
+}*/
+
 </style>
