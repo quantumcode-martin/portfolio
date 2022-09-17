@@ -1,28 +1,17 @@
 <template>
-  <NavigationBarVue/>
-  <div id="app">
+  <div id="">
     <ParticleVue/>
   </div>
   <div class="main">
-    <ProfileBoxVue></ProfileBoxVue>
-    <ProjectsSection/>
+    <router-view />
   </div>
 </template>
 
 <script>
-import NavigationBarVue from './components/NavigationBar.vue'
-
-import ProfileBoxVue from './components/ProfileBox.vue'
 import ParticleVue from './components/ParticleVue.vue'
-import ProjectsSection from './components/ProjectsSection.vue'
 export default {
   name: 'App',
-  components: {
-    NavigationBarVue,
-    ProfileBoxVue,
-    ParticleVue,
-    ProjectsSection
-  }
+  components: { ParticleVue }
 }
 </script>
 

@@ -1,6 +1,7 @@
 <template>
-    <div>
+    <div class="main-panel">
         <p>Project Page</p>
+        <p>The project is {{ $route.params.projectName }}</p>
     </div>
 </template>
 
@@ -12,3 +13,12 @@ export default {
 
 }
 </script>
+
+<style lang="scss" scoped>
+.main-panel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  // background-color: white;
+}
+</style>
