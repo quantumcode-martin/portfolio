@@ -9,7 +9,8 @@
     "is_school_project": false,
     "short": "An infinite 2D city builder made with Godot Engine",
     "file": "reignscape.html",
-    "cover_img": "https://quantumcode.company/images/reignscape.png"
+    "cover_img": "https://quantumcode.company/images/reignscape.png",
+    "card_img": "https://quantumcode.company/images/reignscape.png"
   },
   {
     "id": 1,
@@ -21,7 +22,8 @@
     "is_school_project": false,
     "short": "An idle game that put you in the shoes of a citizen living under a tyrannical government",
     "file": "idle_killer.html",
-    "cover_img": "https://quantumcode.company/images/idlekiller.png"
+    "cover_img": "https://quantumcode.company/images/idlekiller.png",
+    "card_img": "https://quantumcode.company/images/idlekiller.png"
   },
   {
     "id": 2,
@@ -33,6 +35,7 @@
     "is_school_project": false,
     "short": "An idle game that put you in the shoes of a citizen living under a tyrannical government",
     "file": "idle_killer.html",
-    "cover_img": "https://quantumcode.company/images/lip_card.png"
+    "cover_img": "https://quantumcode.company/images/lip_card.png",
+    "card_img": "https://quantumcode.company/images/lip_card.png"
   }
 ]

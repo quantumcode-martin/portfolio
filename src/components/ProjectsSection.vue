@@ -8,7 +8,7 @@
             <template v-slot:content>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</template>
           </ProjectCard> -->
 
-          <ProjectCard v-for="project in projects" :key="project.id" :data-image="project.cover_img" :project-URL="project.url_name">
+          <ProjectCard v-for="project in projects" :key="project.id" :data-image="project.card_img" :project-URL="project.url_name">
             <template #header> {{ project.name }} </template>
             <template v-slot:content> {{ project.short }} </template>
             <template #techs> <p v-for="(icon,id) in project.techs" :key="id"><TechIcon :icon-name="icon"></TechIcon></p> </template>
