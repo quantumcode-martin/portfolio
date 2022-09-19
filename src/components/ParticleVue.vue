@@ -118,7 +118,7 @@ export default {
         const directionY = (Math.random() * 0.4) - 0.2
         // const color = hslToRgb(Math.random(), 0.9, 0.7)
         const color = 'rgba(137,137,137, 1.0)'
-        console.log(color)
+        // console.log(color)
 
         particlesArray.push(new Particle(x, y, directionX, directionY, size, color))
       }

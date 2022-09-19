@@ -1,24 +1,26 @@
 <template>
-  <div class="card-wrap" @mousemove="handleMouseMove" @mouseenter="handleMouseEnter" @mouseleave="handleMouseLeave" @mousedown="handleMouseDown"
-    ref="card">
-    <div class="card" :style="cardStyle">
-      <div class="card-bg" :style="[cardBgTransform, cardBgImage]"></div>
-      <div class="card-info">
-          <h1>
-            <slot name="header">Default Header</slot>
-          </h1>
-          <p>
-            <slot name="content">Default Content</slot>
-          </p>
-      </div>
-      <div class="card-tech">
-        <slot name="techs">
-          <p>1</p>
-          <p>2</p>
-        </slot>
+  <router-link :to="'project/'+projectURL">
+    <div class="card-wrap" @mousemove="handleMouseMove" @mouseenter="handleMouseEnter" @mouseleave="handleMouseLeave" @mousedown="handleMouseDown"
+      ref="card">
+      <div class="card" :style="cardStyle">
+        <div class="card-bg" :style="[cardBgTransform, cardBgImage]"></div>
+        <div class="card-info">
+            <h1>
+              <slot name="header">Default Header</slot>
+            </h1>
+            <p>
+              <slot name="content">Default Content</slot>
+            </p>
+        </div>
+        <div class="card-tech">
+          <slot name="techs">
+            <p>1</p>
+            <p>2</p>
+          </slot>
+        </div>
       </div>
     </div>
-  </div>
+  </router-link>
 </template>
 
 <script>
@@ -37,7 +39,7 @@ export default {
       type: Number,
       default: 0
     },
-    projectName: String
+    projectURL: String
   },
 
   data: () => ({
@@ -69,7 +71,7 @@ export default {
       }
     },
     cardBgImage () {
-      console.log(`url('${this.dataImage}')`)
+      // console.log(`url('${this.dataImage}')`)
       return {
         backgroundImage: `url('${this.dataImage}')`
       }
@@ -91,10 +93,10 @@ export default {
         this.mouseX = 0
         this.mouseY = 0
       }, 1000)
-    },
-    handleMouseDown () {
-      console.log(this.projectName)
     }
+    // handleMouseDown () {
+    //   console.log(this.projectName)
+    // }
   }
 }
 </script>
@@ -129,7 +131,7 @@ p {
 h1 {
   text-align: left;
   color: rgb(219, 219, 219);
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 h1+p, p+p {
@@ -189,6 +191,12 @@ h1+p, p+p {
       }
       :nth-child(3) {
         transition-delay: 0.2s
+      }
+      :nth-child(4) {
+        transition-delay: 0.3s
+      }
+      :nth-child(5) {
+        transition-delay: 0.4s
       }
 
     }
@@ -256,7 +264,7 @@ h1+p, p+p {
   position: absolute;
   bottom: 0;
   color: #fff;
-  transform: translateY(calc(100% - 100px));
+  transform: translateY(calc(100% - 85px));
   transition: 0.6s 1.6s cubic-bezier(0.215, 0.61, 0.355, 1);
 
   p {
@@ -288,7 +296,7 @@ h1+p, p+p {
 
 .card-info h1 {
   font-family: "Playfair Display";
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 700;
   text-shadow: rgba(black, 0.5) 0 10px 10px;
 }
@@ -329,6 +337,12 @@ h1+p, p+p {
   }
   :nth-child(3) {
     transition-delay: 0.7s
+  }
+  :nth-child(4) {
+    transition-delay: 0.8s
+  }
+  :nth-child(5) {
+    transition-delay: 0.9s
   }
 
   /*

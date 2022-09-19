@@ -1,0 +1,38 @@
+[
+  {
+    "id": 0,
+    "name": "Reignscape",
+    "url_name": "reignscape",
+    "techs": ["godot", "c-sharp", "c"],
+    "starting_date": "2000",
+    "ending_date": "2000",
+    "is_school_project": false,
+    "short": "An infinite 2D city builder made with Godot Engine",
+    "file": "reignscape.html",
+    "cover_img": "https://quantumcode.company/images/reignscape.png"
+  },
+  {
+    "id": 1,
+    "name": "IdleKiller",
+    "url_name": "idle_killer",
+    "techs": ["godot", "php"],
+    "starting_date": "2001",
+    "ending_date": "2001",
+    "is_school_project": false,
+    "short": "An idle game that put you in the shoes of a citizen living under a tyrannical government",
+    "file": "idle_killer.html",
+    "cover_img": "https://quantumcode.company/images/idlekiller.png"
+  },
+  {
+    "id": 2,
+    "name": "Lost In Parallels",
+    "url_name": "lost_in_parallels",
+    "techs": ["godot"],
+    "starting_date": "2021",
+    "ending_date": "2001",
+    "is_school_project": false,
+    "short": "An idle game that put you in the shoes of a citizen living under a tyrannical government",
+    "file": "idle_killer.html",
+    "cover_img": "https://quantumcode.company/images/lip_card.png"
+  }
+]
