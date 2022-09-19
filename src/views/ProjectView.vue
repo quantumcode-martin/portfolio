@@ -140,7 +140,7 @@ img, .project-body::v-deep img {
   margin-left: 2rem;
   border-radius: 0.3rem;
   display: block;
-  max-height: 33%;
+  max-height: 22vh;
   //float: left;
   box-shadow: 3px 3px 5px #1a1a1a;
 
@@ -162,6 +162,8 @@ img, .project-body::v-deep img {
 h2, .project-body::v-deep h2 {
   font-size: clamp(2rem, 5vw, 4rem);
   margin-left: 0rem;
+  margin-top: 4rem;
+  margin-bottom: 0rem;
   color: rgb(236, 236, 236);
   text-align: left;
 }
@@ -169,6 +171,8 @@ h3, .project-body::v-deep h3 {
   font-size: clamp(1.5rem, 3vw, 2rem);
   margin-left: 1rem;
   color: #c50600;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
   text-align: left;
 }
 

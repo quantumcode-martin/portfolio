@@ -5,3 +5,64 @@
 
 <p>Alongside the development, I regularly published devlog videos on my Youtube channel Quantum Code. In those videos I show the progress made and share the behind the scenes of independent game development.</p>
 
+<h2>Description</h2>
+
+<h3>What is Reignscape ?</h3>
+<p>
+
+    The idea comes from drawings I used to make when I was a kid. <br>
+    
+    Back then I would take a piece of paper, draw a kinda random stroke representing the ground level and a straight line representing the sea level.
+    Then I would place a bunch of different structures, some trees making forests, houses making villages, boats, fields and so on...
+    This was way more than a simple drawing for me, each structure placed had its reasons to be here.
+    Cities needed trees to be cut and food to eat so their location were carefully chosen, on stiff cliffs and mountains grew saplings forests. Ports were build on both sides of a see..
+</p>   
+<img src="https://quantumcode.company/images/reignscape/handmade.png" alt="Reignscape Handmade">
+<p>
+        All of this ended up being a whole unique world. Sometimes I would even use more sheets to enlarge this world.
+        
+        But this universe lacked of one dimension to really turn alive : On a piece of paper, each world was frozen, I needed a way to make the world progress over time.
+        
+        On the other hand I've learn how to program and make games, so I figured out creating a game out of this idea could really bring the universe to life.
+        
+        So that's it, ReignScape is a strategy city builder game. It'll be made on 2D, but the world itself only has one dimension, you can go left or right. And I want to utilize this simplicity, it will allow me to create a more complex and complete simulation.
+        
+        A concept art for ReignScape
+</p>
+<img src="https://quantumcode.company/images/reignscape/landscape_1_color.png" alt="Reignscape Landscape Colored">
+
+<h3 id="tech-overview">Technical Overview</h3>
+
+<p>
+    On January I made a first mock-up of the game using GodotEngine with C#, I brought procedural generation using noises and shaders for the terrain, infinite worlds with chunks and a threading system so performances aren’t affected when loading chunks, I also made a saving system with a custom byte encoded file type to minimize memory usage.
+</p>
+<p>
+Then I decided to make the game multiplayer, I had to redo almost everything so it has a server with the game logic on it and a client allowing the player to see the world and interact with it. <br>
+The client is made using Godot, and the Server was first made in C to maximize performances, I later realized it was a much better choice to make the Server in C#, so I could share a lot of code between the Client and the Server.
+</p>
+
+<p>
+    Even if this project is very ambitious I can say I have been able to tackle down every technical obstacle.<br>
+    The game is now in a state where it would need a lot of content adding and balancing. <br>
+    I already did some work to refine the graphics and added some content (trees, bushes, fields, some houses...). <br>
+    But balancing a world simulation is extremly difficult and time consuming.
+</p>
+
+<h3>Screenshots</h3>
+ <p>🚧 This part in under maintenance, please come back later... 🚧</p>
+
+<h2>Conclusion</h2>
+
+<p>First of all this project was very technical. I think I made huge technical progresses while creating Reignscape.</p>
+<p>The project quickly grew up in size, a spaghetti code would have made the project unusable. So I had to make the code as clean as possible and use design patterns to manage the consequent size of the project. <br>
+    Doing so I have learned to manage big projects and write high quality code.</p>
+<p>
+    Editing and publishing devlogs was a great experience even though it was quite stressful and overhelming to release a devlog every week. <br>
+    It allowed me to exchange with the community and collect feedbacks. It was also a great source of motivation and gave me a interesting insight on the project.
+</p>
+
+<p>
+    This project was paused becaused I felt it was not possible to finish it in a decent amount of time. <br>
+    I would love to start working on Reignscape again, but I also think it is too much work for one person. <br>
+    I would like to be able to delegate the game design and art work to other people and be able to focus on the coding part.
+</p>
