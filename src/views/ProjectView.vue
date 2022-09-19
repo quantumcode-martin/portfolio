@@ -3,7 +3,7 @@
     <div class="section">
       <h1 id="project">{{ project.name }}</h1>
       <div class="project-description">
-        <p class="a-end">{{ project.starting_date + "-" + project.ending_date }}</p>
+        <p class="a-end">{{getDates}}</p>
       </div>
       <img class="cover-img" :src="project.cover_img" alt="ProjectCoverImage">
       <div class="project-description">
@@ -101,6 +101,17 @@ export default {
         top: 0,
         behavior: 'smooth'
       })
+    }
+  },
+
+  computed: {
+    getDates () {
+      let dates = this.project.starting_date
+      if (this.project.ending_date !== '') {
+        dates += '-'
+        dates += this.project.ending_date
+      }
+      return dates
     }
   }
 

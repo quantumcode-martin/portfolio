@@ -18,7 +18,7 @@
     "url_name": "idle_killer",
     "techs": ["godot", "php"],
     "starting_date": "2001",
-    "ending_date": "2001",
+    "ending_date": "",
     "is_school_project": false,
     "short": "An idle game that put you in the shoes of a citizen living under a tyrannical government",
     "file": "idle_killer.html",
