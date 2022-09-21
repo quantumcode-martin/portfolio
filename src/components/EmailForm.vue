@@ -3,7 +3,7 @@
     <div class="section">
       <h1>Contact Me</h1>
       <div class="container">
-          <form>
+          <form @submit.prevent="sendEmail">
             <label>Name</label>
             <input
               type="text"
@@ -90,20 +90,17 @@ export default {
   },
   methods: {
     sendEmail (e) {
-      try {
-        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target,
-          'YOUR_USER_ID', {
-            name: this.name,
-            email: this.email,
-            message: this.message
-          })
-      } catch (error) {
-        console.log({ error })
-      }
-      // Reset form field
-      this.name = ''
-      this.email = ''
-      this.message = ''
+      // console.log(process.env.VUE_APP_SERVICE_ID)
+      emailjs.sendForm(process.env.VUE_APP_SERVICE_ID, process.env.VUE_APP_TEMPLATE_ID, e.target,
+        process.env.VUE_APP_PUBLIC_KEY, {
+          name: this.name,
+          email: this.email,
+          message: this.message
+        }).then((result) => {
+        console.log('SUCCESS!', result.text)
+      }, (error) => {
+        console.log('FAILED...', error.text)
+      })
     }
   }
 }
