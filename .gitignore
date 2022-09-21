@@ -23,4 +23,4 @@ pnpm-debug.log*
 *.sw?
 
 # API Keys
-emailjs.env
+./emailjs.env
