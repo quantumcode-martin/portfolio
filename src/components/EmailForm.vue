@@ -10,13 +10,16 @@
               v-model="name"
               name="name"
               placeholder="Your Name"
+              required
             >
+            <div></div>
             <label>Email</label>
             <input
               type="email"
               v-model="email"
               name="email"
               placeholder="Your Email"
+              required
               >
             <label>Message</label>
             <textarea
@@ -24,6 +27,7 @@
               v-model="message"
               cols="30" rows="5"
               placeholder="Message">
+              required
             </textarea>
             <input type="submit" value="Send">
           </form>
@@ -62,6 +66,14 @@ input[type=text], [type=email], textarea {
     margin-bottom: 16px;
     resize: vertical;
 }
+input[type=text]:focus, [type=email]:focus, textarea:focus {
+  outline: #c20903 2px solid;
+/* border: 1px solid #c20903; */
+}
+/*input[type=text]:hover, [type=email]:hover, textarea:hover {
+
+    border: 1px solid #c20903;
+}*/
 
 input[type=submit] {
     background-color: #c20903;
@@ -90,6 +102,9 @@ export default {
   },
   methods: {
     sendEmail (e) {
+      if (this.name !== '') {
+        console.log('no name')
+      }
       // console.log(process.env.VUE_APP_SERVICE_ID)
       emailjs.sendForm(process.env.VUE_APP_SERVICE_ID, process.env.VUE_APP_TEMPLATE_ID, e.target,
         process.env.VUE_APP_PUBLIC_KEY, {
@@ -97,7 +112,10 @@ export default {
           email: this.email,
           message: this.message
         }).then((result) => {
-        console.log('SUCCESS!', result.text)
+        // console.log('SUCCESS!', result.text)
+        this.name = ''
+        this.email = ''
+        this.message = ''
       }, (error) => {
         console.log('FAILED...', error.text)
       })
