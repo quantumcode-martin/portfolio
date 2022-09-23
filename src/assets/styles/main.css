@@ -12,7 +12,7 @@ h1{
     position: relative;
     display: inline-block;
     width: 75%;
-    height: 85vh;
+    min-height: 85vh;
     margin: 0 auto;
     /* padding-top: 10vh; */
     padding: 10vh 1rem 1rem 1rem;

@@ -9,9 +9,9 @@
                     <!-- <p class="logo-name">All Projects</p> -->
                 </div>
             </router-link>
-            <ul v-show="!mobile" class="navigation">
-                <li><router-link class="link" :to="{name: ''}"><i class="fa fa-lg fa-chevrons-left"></i></router-link></li>
-                <li><router-link class="link" :to="{name: ''}">About</router-link></li>
+            <ul class="navigation">
+                <a href="/#projects" class="link"><i class="fas fa-code"></i>{{ mobile?'':' All Projects' }}</a>
+                <!-- <li><router-link class="link" :to="{name: ''}">All Projects</router-link></li> -->
             </ul>
             <div class="icon">
                 <i @click="toggleMobileNav" v-show="mobile" class="far fa-bars" :class="{ 'icon-active': mobileNav }"></i>

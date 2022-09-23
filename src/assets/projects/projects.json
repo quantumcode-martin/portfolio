@@ -8,22 +8,25 @@
     "ending_date": "2000",
     "is_school_project": false,
     "short": "An infinite 2D city builder made with Godot Engine",
-    "file": "reignscape.html",
     "cover_img": "https://quantumcode.company/images/reignscape.png",
-    "card_img": "https://quantumcode.company/images/reignscape.png"
+    "card_img": "https://quantumcode.company/images/reignscape.png",
+    "github": null,
+    "live": "https://www.patreon.com/posts/reignscape-v0-2-58664844",
+    "demo": "https://youtube.com/playlist?list=PLQOnbVybQMgPhl75-Tw18y_2DDSjC4C5J"
   },
   {
     "id": 1,
     "name": "IdleKiller",
     "url_name": "idle_killer",
-    "techs": ["godot", "php"],
+    "techs": ["godot", "php", "my-sql", "python"],
     "starting_date": "2022-Now",
     "ending_date": "",
     "is_school_project": false,
     "short": "An idle game that puts you in the shoes of a citizen living under a tyrannical government",
-    "file": "idle_killer.html",
     "cover_img": "https://quantumcode.company/images/idle_killer/idle_killer_banner.png",
-    "card_img": "https://quantumcode.company/images/idlekiller.png"
+    "card_img": "https://quantumcode.company/images/idlekiller.png",
+    "github": null,
+    "live": "https://quantumcode.company/idle_killer/join_alpha/"
   },
   {
     "id": 2,
@@ -31,11 +34,40 @@
     "url_name": "lost_in_parallels",
     "techs": ["godot"],
     "starting_date": "2021",
-    "ending_date": "2001",
+    "ending_date": "",
     "is_school_project": false,
-    "short": "An idle game that put you in the shoes of a citizen living under a tyrannical government",
-    "file": "idle_killer.html",
-    "cover_img": "https://quantumcode.company/images/lip_card.png",
-    "card_img": "https://quantumcode.company/images/lip_card.png"
+    "short": "A multiverse platformer... Winner of the Godot Fire Jam",
+    "cover_img": "https://quantumcode.company/images/lip/lip_banner.png",
+    "card_img": "https://quantumcode.company/images/lip_card.png",
+    "github": null,
+    "live": "https://quantum-martin.itch.io/lost-in-parallels",
+    "demo": "https://youtu.be/ORqz2aXvFoM"
+  },
+  {
+    "id": 3,
+    "name": "Chess Brain",
+    "url_name": "chess_brain",
+    "techs": ["flutter", "dart"],
+    "starting_date": "2022",
+    "ending_date": "Now",
+    "is_school_project": false,
+    "short": "An open sourced web app to create, share and memorize your chess opening repertoires",
+    "cover_img": "https://quantumcode.company/images/chess_brain/chess_brain_cover.png",
+    "card_img": "https://quantumcode.company/images/chess_brain/chess_brain_card.png",
+    "github": "https://github.com/quantumcode-martin/chess-brain"
+  },
+  {
+    "id": 4,
+    "name": "Explore AI",
+    "url_name": "explore_ai",
+    "techs": ["godot", "open_gl"],
+    "starting_date": "2022",
+    "ending_date": "Now",
+    "is_school_project": false,
+    "short": "Exploring artificial intelligence using intuitive visualizations",
+    "cover_img": "https://quantumcode.company/images/explore_ai/explore_ai_cover.png",
+    "card_img": "https://quantumcode.company/images/explore_ai/explore_ai_card.png",
+    "github": "https://github.com/quantumcode-martin/explore-ai",
+    "demo": "https://youtube.com/playlist?list=PLQOnbVybQMgNV2GfxSuAXXXYpFLKMqCNb"
   }
 ]

@@ -1,6 +1,6 @@
 <template>
 
-    <div class="section">
+    <div class="section" id="contact">
       <h1>Contact Me</h1>
       <div class="container">
           <form @submit.prevent="sendEmail">
@@ -48,7 +48,8 @@
     border-width: 1px;
     background-color: #11111111;
     padding: 20px;
-    width: 50%;
+    width: 90%;
+    max-width: 750px;
 }
 
 label {

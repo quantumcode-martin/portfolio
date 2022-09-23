@@ -1,15 +1,17 @@
 <template>
     <header :class="{'scrolled-nav': scrolledNav}">
         <nav>
-            <div class="branding">
-                <img src="@/assets/logo.png" alt="">
-                <p class="logo-name">/MartinHell</p>
-            </div>
-            <ul v-show="!mobile" class="navigation">
-                <li><router-link class="link" :to="{name: ''}">Home</router-link></li>
-                <li><router-link class="link" :to="{name: ''}">About</router-link></li>
+            <a href="#main" class="link no-underline">
+                <div class="branding">
+                    <img src="@/assets/logo.png" alt="">
+                    <p class="logo-name">/MartinHell</p>
+                </div>
+            </a>
+            <ul class="navigation">
+                <a href="#projects" class="link"><i class="fas fa-code"></i>{{ mobile?'':' Projects' }}</a>
+                <a href="#contact" class="link"><i class="fas fa-envelope"></i>{{ mobile?'':' Contact' }}</a>
             </ul>
-            <div class="icon">
+            <!-- <div class="icon">
                 <i @click="toggleMobileNav" v-show="mobile" class="far fa-bars" :class="{ 'icon-active': mobileNav }"></i>
             </div>
             <transition name="mobile-nav">
@@ -17,7 +19,7 @@
                     <li><router-link class="link" :to="{name: ''}">Home</router-link></li>
                     <li><router-link class="link" :to="{name: ''}">About</router-link></li>
                 </ul>
-            </transition>
+            </transition> -->
         </nav>
     </header>
 </template>
@@ -105,10 +107,13 @@ header {
             transition: 0.5s ease all;
             padding-bottom: 4px;
             border-bottom: 1px solid transparent;
-
+            margin-left: 2rem;
             &:hover {
                 color: #c50600;
                 border-color: #c50600;
+            }
+            &.no-underline {
+                border-bottom: 0;
             }
         }
 
