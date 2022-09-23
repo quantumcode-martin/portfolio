@@ -4,11 +4,13 @@
             <a href="#main" class="link no-underline">
                 <div class="branding">
                     <img src="@/assets/logo.png" alt="">
-                    <p class="logo-name">/MartinHell</p>
+                    <p class="logo-name" v-if="!mobile">/MartinHell</p>
                 </div>
             </a>
             <ul class="navigation">
                 <a href="#projects" class="link"><i class="fas fa-code"></i>{{ mobile?'':' Projects' }}</a>
+                <a href="#skills" class="link"><i class="fas fa-tools"></i>{{ mobile?'':' Skills' }}</a>
+                <a href="#education" class="link"><i class="fas fa-user-graduate"></i>{{ mobile?'':' Education' }}</a>
                 <a href="#contact" class="link"><i class="fas fa-envelope"></i>{{ mobile?'':' Contact' }}</a>
             </ul>
             <!-- <div class="icon">
@@ -120,6 +122,7 @@ header {
         .branding {
             display: flex;
             align-items: center;
+            height: 100%;
 
             img {
                 width: 50px;

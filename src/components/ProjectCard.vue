@@ -268,8 +268,16 @@ h1+p, p+p {
   transition: 0.6s 1.6s cubic-bezier(0.215, 0.61, 0.355, 1);
 
   p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
     opacity: 0;
-    text-shadow: rgba(black, 1) 0 2px 3px;
+    //text-shadow: rgba(black, 1) 1px 1px 2px;
+    text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.3),
+                  1px 1px 1px rgba(0, 0, 0, 0.3),
+                1px -1px  1px rgba(0, 0, 0, 0.3),
+                -1px -1px 1px rgba(0, 0, 0, 0.3);
+    text-decoration: solid 1px black;
     transition: 0.6s 1.6s cubic-bezier(0.215, 0.61, 0.355, 1);
 
   }
@@ -295,8 +303,8 @@ h1+p, p+p {
 }
 
 .card-info h1 {
-  font-family: "Playfair Display";
-  font-size: 28px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 25px;
   font-weight: 700;
   text-shadow: rgba(black, 0.5) 0 10px 10px;
 }

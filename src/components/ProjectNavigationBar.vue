@@ -5,7 +5,7 @@
                 <div class="branding">
                     <!-- <i class="fa fa-lg fa-chevron-left"></i> -->
                     <img src="@/assets/logo.png" alt="">
-                    <p class="logo-name">/MartinHell</p>
+                    <p v-if="!mobile" class="logo-name">/MartinHell</p>
                     <!-- <p class="logo-name">All Projects</p> -->
                 </div>
             </router-link>
@@ -13,7 +13,7 @@
                 <a href="/#projects" class="link"><i class="fas fa-code"></i>{{ mobile?'':' All Projects' }}</a>
                 <!-- <li><router-link class="link" :to="{name: ''}">All Projects</router-link></li> -->
             </ul>
-            <div class="icon">
+            <!-- <div class="icon">
                 <i @click="toggleMobileNav" v-show="mobile" class="far fa-bars" :class="{ 'icon-active': mobileNav }"></i>
             </div>
             <transition name="mobile-nav">
@@ -21,7 +21,7 @@
                     <li><router-link class="link" :to="{name: ''}">Home</router-link></li>
                     <li><router-link class="link" :to="{name: ''}">About</router-link></li>
                 </ul>
-            </transition>
+            </transition> -->
         </nav>
     </header>
 </template>
@@ -95,7 +95,7 @@ header {
         width: 90%;
         margin: 0 auto;
         @media (min-width: 1140px) {
-            max-width: 1140px;
+            max-width: 1080px;
         }
 
         ul,
@@ -129,9 +129,10 @@ header {
         }
 
         .branding {
+            margin-left: 0;
             display: flex;
             align-items: center;
-
+            height: 100%;
             img {
                 width: 50px;
                 transition: 0.5s ease all;

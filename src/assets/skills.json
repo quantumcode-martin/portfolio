@@ -1,0 +1,68 @@
+[
+    {
+        "id": 0,
+        "name": "C#",
+        "url_name": "c-sharp",
+        "redirect": "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"
+    },
+    {
+        "id": 1,
+        "name": "C",
+        "url_name": "c",
+        "redirect": "https://en.wikipedia.org/wiki/C_(programming_language)"
+    },
+    {
+        "id": 2,
+        "name": "Dart",
+        "url_name": "dart",
+        "redirect": "https://dart.dev/"
+    },
+    {
+        "id": 3,
+        "name": "Flutter",
+        "url_name": "flutter",
+        "redirect": "https://flutter.dev/"
+    },
+    {
+        "id": 4,
+        "name": "Godot",
+        "url_name": "godot",
+        "redirect": "https://godotengine.org/"
+    },
+    {
+        "id": 5,
+        "name": "HTML5",
+        "url_name": "html-5",
+        "redirect": "https://en.wikipedia.org/wiki/HTML5"
+    },
+    {
+        "id": 6,
+        "name": "MySQL",
+        "url_name": "my-sql",
+        "redirect": "https://www.mysql.com/"
+    },
+    {
+        "id": 7,
+        "name": "OpenGL",
+        "url_name": "open-gl",
+        "redirect": "https://www.opengl.org/"
+    },
+    {
+        "id": 8,
+        "name": "PHP",
+        "url_name": "php",
+        "redirect": "https://www.php.net/"
+    },
+    {
+        "id": 9,
+        "name": "Python",
+        "url_name": "python",
+        "redirect": "https://www.python.org/"
+    },
+    {
+        "id": 10,
+        "name": "Vue.js",
+        "url_name": "vue-js",
+        "redirect": "https://vuejs.org/"
+    }
+]

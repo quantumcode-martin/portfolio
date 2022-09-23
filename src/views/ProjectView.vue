@@ -1,6 +1,6 @@
 <template>
     <ProjectNavigationBar></ProjectNavigationBar>
-    <div class="section">
+    <div class="section project-section">
       <h1 id="project">{{ project.name }}</h1>
       <div class="project-description">
         <p class="a-end">{{getDates}}</p>
@@ -127,6 +127,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  .project-section {
+    width: 75%;
+    max-width: 1080px;
+  }
 .main-panel {
   position: absolute;
   width: 100%;
@@ -177,7 +181,7 @@ h2, .project-body::v-deep h2 {
 }
 h3, .project-body::v-deep h3 {
   font-size: clamp(1.5rem, 3vw, 2rem);
-  margin-left: 1rem;
+  margin-left: 0rem;
   color: #c50600;
   margin-top: 3rem;
   margin-bottom: 1rem;
@@ -185,11 +189,14 @@ h3, .project-body::v-deep h3 {
 }
 
 p, .project-body::v-deep p {
-  margin-left: 2rem;
+  margin-left: 0rem;
   color: rgb(236, 236, 236);
   text-align: left;
   font-size: 1.1rem;
-  line-height: 133%;
+  //line-height: 100%;
+  letter-spacing: normal;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 350;
 }
 
 .project-body::v-deep a {
