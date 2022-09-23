@@ -8,7 +8,7 @@
 </p>
 <p>
     As I was happy with the visualizations and found them intuitive, I decided to work on some educative Youtube videos.
-    I created the Explore AI series, teaching artificial intelligence principles using visualizations made with Godot Engine.
+    I created the <a href="https://youtube.com/playlist?list=PLQOnbVybQMgNV2GfxSuAXXXYpFLKMqCNb">Explore AI series</a>, teaching artificial intelligence principles using visualizations made with Godot Engine.
     The series covers neural networks, backpropagation (as a supervised learning example) and unsupervised learning with Kmeans and Kohonen maps.
 </p>
 
@@ -69,11 +69,32 @@ Starting from the perceptron:
 <h3>Kohonen maps</h3>
 
 <p>
-    Another unsupervised learning technique is called Kohonen maps.
+    Another unsupervised learning technique is called Kohonen maps, or self-organizing maps (detailed in the video).
     I really enjoy working with this technique because I think it is an intuitive algorithm, and the visualizations are awesome.
+    The principle is to create a map with linked nodes, then for each data in the dataset, attract the closest node towards the data and attract it's neighbors too.
+    <br> The results are great and it is not prone to randomness as the initialization is done with a map spread around the dataset space. <br>
+    I also worked on 3D Kohonen maps to better cover the color space (I first used 2D to make the examples easier).
 </p>
 
-<img src="https:quantumcode.company/images/explore_ai/kohonen_map.png" alt="Kmean algorithm, bad result">
+<img src="https:quantumcode.company/images/explore_ai/kohonen_map.png" alt="Kohonen map">
+
+<img src="https:quantumcode.company/images/explore_ai/3d_kohonen.png" alt="Kohonen map in 3D">
+
+<p>
+    A drawback of Kohonen maps in this case is that they dedicate nodes to highlight distance between clusters.
+    So if our image has two very distinct colors, it is possible that the algorithm assign some colors in-between to indicate that those colors are very different.
+    We can see this in the previous image, the encircled colors are used by less than 2 pixels, and they are here to show that the purple color is "far" from the other ones. <br>
+    This behavior is very useful in many use cases as the resulting Kohonen map has not only information about clusters but also about clusters relationships. <br>
+    But in this case we do not really need this and we would prefer each node to be used by many pixels. <br>
+    This is how I got the idea to initiate a KMeans algorithm using the result of a Kohonen map. 
+</p>
+
+<h3>Kohonen map × KMeans</h3>
+<p>
+    The results are very promising, the Kohonen×KMean algorithm is beating both Kmeans and Kohonen maps in terms of error.
+    This shows that the Kmeans efficiently solve the unsusued node issue produced by the Kohonen map.
+</p>
+<img src="https:quantumcode.company/images/explore_ai/kohonen_kmeans.png" alt="Kohonen map in 3D">
 
 
 </html>
