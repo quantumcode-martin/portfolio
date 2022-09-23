@@ -24,8 +24,56 @@ Starting from the perceptron:
 
 
 <h2>Backpropagation</h2>
+<p>
+    I explain the principle of backpropagation. I detail formulas, on a perceptron and then on a full neural network.
+    I then give examples and use cases both in classification and regression.
+</p>
+
+<p>Here is an exaple of regressions to approximate some logical operators:</p>
+<img src="https://quantumcode.company/images/explore_ai/logical_operators_regression.png" alt="Logical operators regression">
 
 <h2>Unsupervised Learning</h2>
+<p>
+    Unsupervised learning uses machine learning to analyze and cluster unlabeled datasets. The goal is to find hidden patterns or groupings.
+</p>
+
 <h3>Image color reduction problem</h3>
+
+<p>
+    Let's consider a 50×50 pixels image. Each pixel's color is encoded on 3bytes, this represents 256×256×256 (=more than 16 millions) different possible colors.
+    Of course our image (2,500 pixels) does not need all those colors, so we can try to reduce the amount of colors used.
+    A naïve approach would be to select colors spread around the visible spectrum, this can work if we keep a high number of colors.
+    But as we select fewer colors, a lot of our selected colors will not be used in the image and we will end up with an image that does not make scence anymore.
+    Another approach would be to take random colors among the ones in our image.
+    This would surely result in better results but would still produce bad images as some specific colors would often not be randomly selected.
+</p>
+
+<p>
+    A great solution to solve this problem is of course to use unsupervised learning.
+    We consider the colors in our image as an unlabeled dataset.
+    Using unsupervised machine learning we will try to create clusters.
+    Those clusters will represent the most "important" colors in the image. 
+</p>
+
+<h3>KMeans algorithm</h3>
+
+<p>Using the KMeans algorithm (detailed in the video) we can achieve some impressive results. Here is an example with a 50×50 pixels image represented using only 25 colors.</p>
+<img src="https:quantumcode.company/images/explore_ai/kmeans.png" alt="Kmean algorithm">
+
+<p>But because we use random intializations, it sometimes happens to get less impressive results.</p>
+<img src="https:quantumcode.company/images/explore_ai/kmeans_bad.png" alt="Kmean algorithm, bad result">
+<p>As you can see we still recognize the image, but the colors are not great.</p>
+
+<p>Note that some Kmeans initializations techniques exists but I decided not to explore this part, and create my own initialization as detailed below.</p>
+
+<h3>Kohonen maps</h3>
+
+<p>
+    Another unsupervised learning technique is called Kohonen maps.
+    I really enjoy working with this technique because I think it is an intuitive algorithm, and the visualizations are awesome.
+</p>
+
+<img src="https:quantumcode.company/images/explore_ai/kohonen_map.png" alt="Kmean algorithm, bad result">
+
 
 </html>
