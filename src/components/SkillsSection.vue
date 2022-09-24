@@ -2,7 +2,7 @@
   <div class="section" id="skills">
       <h1>My Skills</h1>
       <ul class="skills">
-          <SkillIcon height="75" v-for="skill in skills" :key="skill.id" :skill="skill"/>
+          <SkillIcon :height="75" v-for="skill in skills" :key="skill.id" :skill="skill"/>
           <!-- <SkillIcon height="75" tech-name="godot"/> -->
       </ul>
     </div>

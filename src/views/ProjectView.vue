@@ -196,7 +196,7 @@ p, .project-body::v-deep p {
   //line-height: 100%;
   letter-spacing: normal;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 350;
+  font-weight: 400;
 }
 
 .project-body::v-deep a {

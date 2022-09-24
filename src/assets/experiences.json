@@ -1,0 +1,37 @@
+[
+    {
+        "id": 0,
+        "title": "Quiver",
+        "date": "2022",
+        "timeline_position": "auto",
+        "short_description": "Godot Developer (Freelance)",
+        "icon": "briefcase",
+        "description": "<ul><li>Designed and developed a complete top down shooter template</li><li> Created multiple demos to showcase the template</li><li> Wrote documentations for the template and the demos</li></ul>"
+    },
+    {
+        "id": 1,
+        "title": "Telecom Nancy",
+        "date": "2019-2023",
+        "timeline_position": "auto",
+        "short_description": "Major in Artificial Intelligence and Big Data",
+        "description": "Some Related Coursework:<ul><li> Data analysis and statistics</li><li> Management of big data</li><li> Project management</li><li> Cloud computing</li><li> Artificial intelligence</li><li> Data mining, knowledge discovery</li></ul> Cumulative GPA: 4.0/4.0",
+        "icon": "book"
+    },
+    {
+        "id": 2,
+        "title": "Lycée Joffre",
+        "date": "2016-2019",
+        "timeline_position": "auto",
+        "short_description": "Classe Préparatoire aux Grandes Ecoles (CPGE)",
+        "description": "Major in theorical mathematics and physics, minor in computer science",
+        "icon": "book"
+    },
+    {
+        "id": 3,
+        "title": "High School Diploma In Science",
+        "date": "2016",
+        "timeline_position": "auto",
+        "description": "Received with high distinction (Overall grade: 17.78/20.00)",
+        "icon": "graduation-cap"
+    }
+]

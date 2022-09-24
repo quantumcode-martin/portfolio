@@ -4,7 +4,9 @@ html {
   }
 
 h1{
-    color: #bbbbbb;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5rem;
+    color: #dbdbdb;
 }
 
 .section {
@@ -19,4 +21,8 @@ h1{
     border-radius: 1rem;
     color: rgb(54, 54, 54);
     align-items: center;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
 }

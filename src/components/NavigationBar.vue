@@ -10,7 +10,7 @@
             <ul class="navigation">
                 <a href="#projects" class="link"><i class="fas fa-code"></i>{{ mobile?'':' Projects' }}</a>
                 <a href="#skills" class="link"><i class="fas fa-tools"></i>{{ mobile?'':' Skills' }}</a>
-                <a href="#education" class="link"><i class="fas fa-user-graduate"></i>{{ mobile?'':' Education' }}</a>
+                <a href="#education" class="link"><i class="fas fa-briefcase"></i>{{ mobile?'':' Experience' }}</a>
                 <a href="#contact" class="link"><i class="fas fa-envelope"></i>{{ mobile?'':' Contact' }}</a>
             </ul>
             <!-- <div class="icon">

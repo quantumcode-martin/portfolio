@@ -46,15 +46,30 @@
     border-style: solid;
     border-color: rgba(255, 255, 255, 0.548);
     border-width: 1px;
-    background-color: #11111111;
+    background-color: #23232394;
     padding: 20px;
     width: 90%;
     max-width: 750px;
 }
 
 label {
-    float: left;
-    color: rgb(214, 214, 214);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  float: left;
+  color: rgb(214, 214, 214);
+}
+
+input {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.0rem;
+  color: #fff;
+  background-color: #232323c0;
+}
+textarea {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.0rem;
+  color: #fff;
+  background-color: #232323c0;
 }
 
 input[type=text], [type=email], textarea {
@@ -69,6 +84,7 @@ input[type=text], [type=email], textarea {
 }
 input[type=text]:focus, [type=email]:focus, textarea:focus {
   outline: #c20903 2px solid;
+  border: 1px solid transparent;
 /* border: 1px solid #c20903; */
 }
 /*input[type=text]:hover, [type=email]:hover, textarea:hover {

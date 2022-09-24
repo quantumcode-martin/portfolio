@@ -1,16 +1,20 @@
 <template>
     <div class="section" id="education">
-        <h1>My Education</h1>
-        <p>🚧 Work in progress 🚧</p>
+        <h1>My Experience and Education</h1>
 
-        <div class="education-panel">
-            <h2>School Name</h2>
-        </div>
+        <!-- <a href="https://github.com/quantumcode-martin" target="_blank" class="btn-red-outline ma-1"><i class="fa fa-solid fa-briefcase"></i> My Resume</a> -->
+
+        <ExperienceTimeline/>
     </div>
 </template>
 
 <script>
-
+import ExperienceTimeline from './ExperienceTimeline.vue'
+export default {
+  components: {
+    ExperienceTimeline
+  }
+}
 </script>
 
 <style lang="scss">
@@ -32,5 +36,28 @@ p {
     h2 {
         color: rgb(223, 223, 223);
     }
+}
+
+.btn-red, .btn-red-outline {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    transition: all 0.3s ease;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+.btn-red-outline {
+    color: rgb(194, 9, 3);
+    background-color: transparent;
+    border: 2px solid rgb(194, 9, 3);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+.btn-red-outline:hover {
+color: white;
+background-color: rgb(194, 9, 3);
 }
 </style>
