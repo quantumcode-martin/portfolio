@@ -8,10 +8,10 @@
                 </div>
             </a>
             <ul class="navigation">
-                <a href="#projects" class="link"><i class="fas fa-code"></i>{{ mobile?'':' Projects' }}</a>
-                <a href="#skills" class="link"><i class="fas fa-tools"></i>{{ mobile?'':' Skills' }}</a>
-                <a href="#education" class="link"><i class="fas fa-briefcase"></i>{{ mobile?'':' Experience' }}</a>
-                <a href="#contact" class="link"><i class="fas fa-envelope"></i>{{ mobile?'':' Contact' }}</a>
+                <a href="#projects" class="link"><i class="fas fa-code"></i>{{ mobile?'':' PROJECTS' }}</a>
+                <a href="#skills" class="link"><i class="fas fa-tools"></i>{{ mobile?'':' SKILLS' }}</a>
+                <a href="#education" class="link"><i class="fas fa-briefcase"></i>{{ mobile?'':' EXPERIENCE' }}</a>
+                <a href="#contact" class="link"><i class="fas fa-envelope"></i>{{ mobile?'':' CONTACT' }}</a>
             </ul>
             <!-- <div class="icon">
                 <i @click="toggleMobileNav" v-show="mobile" class="far fa-bars" :class="{ 'icon-active': mobileNav }"></i>
@@ -92,7 +92,6 @@ header {
 
         ul,
         .link {
-            font-weight: 500;
             color: #fff;
             list-style: none;
             text-decoration: none;
@@ -105,7 +104,7 @@ header {
         }
 
         .link {
-            font-size: 14px;
+            font-size: 15px;
             transition: 0.5s ease all;
             padding-bottom: 4px;
             border-bottom: 1px solid transparent;

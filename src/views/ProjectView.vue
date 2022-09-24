@@ -152,7 +152,7 @@ img, .project-body::v-deep img {
   margin-left: 2rem;
   border-radius: 0.3rem;
   display: inline-flex;
-  max-height: 22vh;
+  max-height: 35vh;
   //float: left;
   box-shadow: 3px 3px 5px #1a1a1a;
 

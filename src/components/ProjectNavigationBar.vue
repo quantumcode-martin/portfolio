@@ -10,7 +10,7 @@
                 </div>
             </router-link>
             <ul class="navigation">
-                <a href="/#projects" class="link"><i class="fas fa-code"></i>{{ mobile?'':' All Projects' }}</a>
+                <a href="/#projects" class="link"><i class="fas fa-code"></i>{{ mobile?'':' ALL PROJECTS' }}</a>
                 <!-- <li><router-link class="link" :to="{name: ''}">All Projects</router-link></li> -->
             </ul>
             <!-- <div class="icon">
@@ -100,7 +100,6 @@ header {
 
         ul,
         .link {
-            font-weight: 500;
             color: #fff;
             list-style: none;
             text-decoration: none;
@@ -113,7 +112,7 @@ header {
         }
 
         .link {
-            font-size: 14px;
+            font-size: 15px;
             transition: 0.5s ease all;
             padding-bottom: 4px;
             border-bottom: 1px solid transparent;
