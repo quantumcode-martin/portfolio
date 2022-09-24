@@ -1,7 +1,14 @@
 <template>
     <div class="timeline-item">
+        <div :class="'timeline-content' + (timelinePosition === 'right' ? ' right' : '')">
+            <p class="date">{{ experience.date }}</p>
+            <h2>{{ experience.title }}</h2>
+            <h3>{{ experience.short_description }}</h3>
+            <p v-html="experience.description"/>
+            <!-- <a href="#" class="btn">button</a> -->
+        </div>
         <div class="timeline-icon">
-            <i :class="'fas fa-lg fa-' + (experience.icon ? experience.icon : 'star')" style="color: #fff"></i>
+            <i :class="'fas fa-lg fa-' + (experience.icon ? experience.icon : 'star')"></i>
           <!-- <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
             x="0px" y="0px" width="21px" height="20px" viewBox="0 0 21 20" enable-background="new 0 0 21 20"
             xml:space="preserve">
@@ -9,14 +16,7 @@
               d="M19.998,6.766l-5.759-0.544c-0.362-0.032-0.676-0.264-0.822-0.61l-2.064-4.999c-0.329-0.825-1.5-0.825-1.83,0L7.476,5.611c-0.132,0.346-0.462,0.578-0.824,0.61L0.894,6.766C0.035,6.848-0.312,7.921,0.333,8.499l4.338,3.811c0.279,0.246,0.395,0.609,0.314,0.975l-1.304,5.345c-0.199,0.842,0.708,1.534,1.468,1.089l4.801-2.822c0.313-0.181,0.695-0.181,1.006,0l4.803,2.822c0.759,0.445,1.666-0.23,1.468-1.089l-1.288-5.345c-0.081-0.365,0.035-0.729,0.313-0.975l4.34-3.811C21.219,7.921,20.855,6.848,19.998,6.766z" />
           </svg> -->
         </div>
-        <div :class="'timeline-content' + (timelinePosition === 'right' ? ' right' : '')">
-          <p class="date">{{ experience.date }}</p>
-          <h2>{{ experience.title }}</h2>
-          <h3>{{ experience.short_description }}</h3>
-          <p v-html="experience.description"/>
-          <!-- <a href="#" class="btn">button</a> -->
-        </div>
-      </div>
+    </div>
 </template>
 
 <script>
@@ -127,7 +127,7 @@ p {
     width: 100%;
     }
 
-    .timeline-item::v-deep {
+    .timeline-item {
     margin-bottom: 50px;
     position: relative;
     @extend %clearfix;
@@ -145,9 +145,13 @@ p {
         margin-left: -23px;
         @include prefix(border-radius, 50%);
 
+        transition: 0.5s all ease-in-out;
+
         i {
         position: relative;
         top: 14px;
+        color: #fff;
+        transition: 0.5s all ease-in-out;
         // left: 14px;
         }
     }
@@ -192,6 +196,14 @@ p {
         font-style: italic;
         @include prefix(border-radius, 3px 3px 0 0);
         text-align: left;
+        }
+
+        &:hover + .timeline-icon {
+            background-color: $base-font-color !important;
+
+            i {
+                color: #020202;
+            }
         }
 
         &:before {
@@ -240,6 +252,7 @@ p {
         }
         }
     }
+
     }
 }
 
