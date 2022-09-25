@@ -69,5 +69,18 @@
     "card_img": "https://quantumcode.company/images/explore_ai/explore_ai_card.png",
     "github": "https://github.com/quantumcode-martin/explore-ai",
     "demo": "https://youtube.com/playlist?list=PLQOnbVybQMgNV2GfxSuAXXXYpFLKMqCNb"
+  },
+  {
+    "id": 5,
+    "name": "Fourier Series Evolver",
+    "url_name": "fourier_series_evolver",
+    "techs": ["godot"],
+    "starting_date": "2022",
+    "ending_date": "",
+    "is_school_project": false,
+    "short": "Using genetic algorithms and visualizations to evolve fourier series",
+    "cover_img": "https://quantumcode.company/images/fourier_series_evolver/cover.png",
+    "card_img": "https://quantumcode.company/images/fourier_series_evolver/card.png",
+    "github": "https://github.com/quantumcode-martin/fourier-series-evolver"
   }
 ]
