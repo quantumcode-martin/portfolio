@@ -264,7 +264,8 @@ h1+p, p+p {
   position: absolute;
   bottom: 0;
   color: #fff;
-  transform: translateY(calc(100% - 85px));
+  transform-origin: bottom center;
+  transform: translateY(calc(100% - 115px));
   transition: 0.6s 1.6s cubic-bezier(0.215, 0.61, 0.355, 1);
 
   p {
@@ -306,7 +307,11 @@ h1+p, p+p {
   font-family: 'Open Sans', sans-serif;
   font-size: 25px;
   font-weight: 700;
+  min-height: 68px;
+  vertical-align: bottom;
   text-shadow: rgba(black, 0.5) 0 10px 10px;
+  display: flex;
+  align-items: flex-end;
 }
 
 // .card-tech

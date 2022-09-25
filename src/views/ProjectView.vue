@@ -210,7 +210,7 @@ p, .project-body::v-deep p {
   color: rgb(236, 236, 236);
   text-align: left;
   font-size: 1.1rem;
-  //line-height: 100%;
+  line-height: 1.65rem;
   letter-spacing: normal;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
