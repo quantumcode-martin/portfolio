@@ -86,7 +86,6 @@ export default {
   created () {
     const projectURLName = this.$route.params.projectName
     this.project = this.projects.find(e => { return e.url_name === projectURLName })
-    this.projectBody = require('@/components/projects/Reignscape.vue')
     // console.log(this.projectBody)
     // this.projectBody = require(`@/assets/projects/${this.project.file}`)
     axios.get(`/project/${this.project.url_name}.html`).then(resp => {
