@@ -224,7 +224,7 @@ p {
         // background-color: blue;
         position: absolute;
         left: 10px;
-        top: -35px;
+        top: -34px;
         border: $base-font-color 2px solid;
         padding: 0px 10px;
         border-radius: 5px 5px 0px 0px;
