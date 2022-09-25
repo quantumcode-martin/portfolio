@@ -146,7 +146,7 @@ a {
 }
 
 .container {
-  max-width: 1250px;
+  max-width: 1080px;
   margin: 0 auto;
 }
 

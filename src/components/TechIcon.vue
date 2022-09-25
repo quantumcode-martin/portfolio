@@ -1,5 +1,5 @@
 <template>
-  <inline-svg :height="height" :src="getIcon"/>
+  <inline-svg :height="getSize" :src="getIcon"/>
 </template>
 
 <script>
@@ -20,6 +20,11 @@ export default {
     {
       type: Number,
       default: 25
+    },
+    mheight:
+    {
+      type: Number,
+      default: undefined
     }
 
   },
@@ -28,7 +33,8 @@ export default {
     return {
       // mySVG: '!html-loader!./../assets/projects/tech_icons/php.svg',
       iconPaths: {
-      }
+      },
+      mobile: false
     }
   },
 
@@ -42,7 +48,29 @@ export default {
         icon = require('../assets/projects/tech_icons/question.svg')
       }
       return icon
+    },
+    getSize () {
+      if ((this.mheight === undefined) || (!this.mobile)) {
+        return this.height
+      }
+      return this.mheight
     }
+  },
+
+  methods: {
+    checkScreen () {
+      this.windowWidth = window.innerWidth
+      if (this.windowWidth <= 750) {
+        this.mobile = true
+        return
+      }
+      this.mobile = false
+    }
+  },
+
+  created () {
+    window.addEventListener('resize', this.checkScreen)
+    this.checkScreen()
   }
 }
 

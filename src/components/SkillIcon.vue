@@ -1,6 +1,6 @@
 <template>
   <a :href="skill.redirect" target="_blank" class="skill-box">
-    <TechIcon class="tech-icon" :height="height" :icon-name="skill.url_name"></TechIcon>
+    <TechIcon class="tech-icon" :height="height" :mheight="mheight" :icon-name="skill.url_name"></TechIcon>
     <p>{{ skill.name }}</p>
   </a>
 </template>
@@ -10,7 +10,7 @@ import TechIcon from './TechIcon.vue'
 
 export default {
   components: { TechIcon },
-  props: ['skill', 'height']
+  props: ['skill', 'height', 'mheight']
 }
 </script>
 
@@ -36,6 +36,12 @@ export default {
 
 .tech-icon {
   pointer-events: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .skill-box{
+    margin: 1rem;
+  }
 }
 
 </style>

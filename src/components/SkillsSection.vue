@@ -2,7 +2,7 @@
   <div class="section" id="skills">
       <h1>My Skills</h1>
       <ul class="skills">
-          <SkillIcon :height="75" v-for="skill in skills" :key="skill.id" :skill="skill"/>
+          <SkillIcon :height="75" :mheight="40" v-for="skill in skills" :key="skill.id" :skill="skill"/>
           <!-- <SkillIcon height="75" tech-name="godot"/> -->
       </ul>
     </div>
@@ -36,4 +36,10 @@ export default {
   margin: auto;
   padding: 0;
 }
+
+@media (max-width: 600px) {
+  .skills {
+    max-width: 100%;
+  }
+ }
 </style>

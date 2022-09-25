@@ -28,7 +28,6 @@ export default {
   mounted () {
     this.width = this.$refs.card.offsetWidth
     this.height = this.$refs.card.offsetHeight
-    this.$refs.card.longclick()
   },
   props: {
     dataImage: String,

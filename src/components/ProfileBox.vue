@@ -46,7 +46,7 @@ export default {
 
 h2, .main-font {
   font-family: 'Salsa';
-  font-size: clamp(4rem, 10vw, 8rem);
+  font-size: clamp(3rem, 10vw, 8rem);
   font-weight: 600;
   text-align: center;
   width: 100%;
@@ -56,7 +56,7 @@ h2, .main-font {
 p {
   font-family: 'Open Sans';
   color: rgb(255, 255, 255);
-  font-size: clamp(1.3rem, 1.9vw, 2.3rem);
+  font-size: clamp(1rem, 1.9vw, 2.3rem);
 }
 
 .text-red {
