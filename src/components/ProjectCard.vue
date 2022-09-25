@@ -1,6 +1,6 @@
 <template>
   <router-link :to="'project/'+projectURL">
-    <div class="card-wrap" @mousemove="handleMouseMove" @mouseenter="handleMouseEnter" @mouseleave="handleMouseLeave" @mousedown="handleMouseDown"
+    <div class="card-wrap" @contextmenu.prevent @mousemove="handleMouseMove" @mouseenter="handleMouseEnter" @mouseleave="handleMouseLeave" @mousedown="handleMouseDown"
       ref="card">
       <div class="card" :style="cardStyle">
         <div class="card-bg" :style="[cardBgTransform, cardBgImage]"></div>
@@ -28,6 +28,7 @@ export default {
   mounted () {
     this.width = this.$refs.card.offsetWidth
     this.height = this.$refs.card.offsetHeight
+    this.$refs.card.longclick()
   },
   props: {
     dataImage: String,

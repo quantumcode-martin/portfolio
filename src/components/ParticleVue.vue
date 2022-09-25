@@ -14,7 +14,7 @@
   top: 0;
   left: 0;
   widows: 100%;
-  height: 100%;
+  height: 120%;
   background-color: #232323;
   z-index: -100;
   overflow: scroll;

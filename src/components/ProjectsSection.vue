@@ -19,7 +19,7 @@
 
 </template>
 
-<style>
+<style scoped>
 .container {
   padding: 40px 80px;
   display: flex;
