@@ -63,7 +63,6 @@ import ProjectNavigationBar from '@/components/ProjectNavigationBar.vue'
 import projectsData from '@/assets/projects/projects.json'
 import axios from 'axios'
 import TechIcon from '@/components/TechIcon.vue'
-import ProjectImage from '@/components/ProjectImage.vue'
 
 export default {
   props: {
@@ -82,7 +81,7 @@ export default {
   },
 
   // eslint-disable-next-line vue/no-unused-components
-  components: { ProjectNavigationBar, TechIcon, ProjectImage },
+  components: { ProjectNavigationBar, TechIcon },
 
   created () {
     const projectURLName = this.$route.params.projectName
@@ -321,9 +320,10 @@ a {
 
 .fullscreen-img {
   margin: auto;
-  height: 75%;
-  max-height: 90%;
-  max-width: 90%;
+  height: auto;
+  width: auto;
+  max-height: 80%;
+  max-width: 80%;
   cursor: auto;
 }
 
