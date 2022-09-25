@@ -191,11 +191,12 @@ p {
         padding: 0px;
         background: transparent;
         color: $timeline-color;
-        margin: 0px 0px 0px 0px;
+        margin: 0px;
+        margin-right: -10px;
         font-weight: 400;
         font-style: italic;
         @include prefix(border-radius, 3px 3px 0 0);
-        text-align: left;
+        text-align: right;
         }
 
         &:hover + .timeline-icon {

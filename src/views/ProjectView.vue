@@ -26,11 +26,15 @@
 
       </div>
 
-      <div class="project-body" v-html="projectBody"></div>
+      <div class="project-body" @click="handleBodyClick" v-html="projectBody"></div>
 
       <div v-if="projectBody===undefined">
         <h2>🚧 Under Maintenance 🚧</h2>
         <p>I am working on the description of this project. It should be ready soon. Please come back later...</p>
+      </div>
+
+      <div v-if="displayImage" @click="handleDisplayClick" class="fullscreen-display" id="display">
+        <img class="fullscreen-img" :src="displayImage" alt="">
       </div>
 
       <!-- <h2>Title</h2>
@@ -59,6 +63,7 @@ import ProjectNavigationBar from '@/components/ProjectNavigationBar.vue'
 import projectsData from '@/assets/projects/projects.json'
 import axios from 'axios'
 import TechIcon from '@/components/TechIcon.vue'
+import ProjectImage from '@/components/ProjectImage.vue'
 
 export default {
   props: {
@@ -71,11 +76,13 @@ export default {
       scY: 0,
       projects: projectsData,
       project: undefined,
-      projectBody: undefined
+      projectBody: undefined,
+      displayImage: undefined
     }
   },
 
-  components: { ProjectNavigationBar, TechIcon },
+  // eslint-disable-next-line vue/no-unused-components
+  components: { ProjectNavigationBar, TechIcon, ProjectImage },
 
   created () {
     const projectURLName = this.$route.params.projectName
@@ -109,6 +116,17 @@ export default {
         top: 0,
         behavior: 'smooth'
       })
+    },
+    handleBodyClick (e) {
+      if (e.target.tagName === 'IMG') {
+        this.displayImage = e.target.src
+        console.log(e.target.src)
+      }
+    },
+    handleDisplayClick (e) {
+      if (e.target.id === 'display') {
+        this.displayImage = undefined
+      }
     }
   },
 
@@ -146,10 +164,10 @@ h1 {
 }
 
 img, .project-body::v-deep img {
+  cursor: pointer;
   position: relative;
   left: 0;
   max-width: 75%;
-  margin-left: 2rem;
   border-radius: 0.3rem;
   display: inline-flex;
   max-height: 35vh;
@@ -167,8 +185,9 @@ img, .project-body::v-deep img {
     width: 100%;
     max-width: 100%;
     max-height: none;
-  }
 
+    cursor: auto;
+  }
 }
 
 h2, .project-body::v-deep h2 {
@@ -287,4 +306,25 @@ a {
 .project-links {
   margin-top: 2rem;
 }
+
+.fullscreen-display {
+  background-color: #1b1b1be5;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  align-content: center;
+  display: flex;
+  padding-top: 5rem;
+}
+
+.fullscreen-img {
+  margin: auto;
+  height: 75%;
+  max-height: 90%;
+  max-width: 90%;
+  cursor: auto;
+}
+
 </style>
