@@ -35,6 +35,16 @@
         "redirect": "https://en.wikipedia.org/wiki/HTML5"
     },
     {
+        "name": "Java",
+        "url_name": "java",
+        "redirect": "https://www.java.com/en/"
+    },
+    {
+        "name": "JavaScript",
+        "url_name": "js",
+        "redirect": "https://fr.wikipedia.org/wiki/JavaScript"
+    },
+    {
         "name": "MySQL",
         "url_name": "my-sql",
         "redirect": "https://www.mysql.com/"
@@ -58,6 +68,11 @@
         "name": "Sass",
         "url_name": "sass",
         "redirect": "https://sass-lang.com/"
+    },
+    {
+        "name": "Unity",
+        "url_name": "unity",
+        "redirect": "https://unity.com/"
     },
     {
         "name": "Vue.js",
