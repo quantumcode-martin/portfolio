@@ -15,6 +15,11 @@
         "redirect": "https://dart.dev/"
     },
     {
+        "name": "Firebase",
+        "url_name": "firebase",
+        "redirect": "https://firebase.google.com/"
+    },
+    {
         "name": "Flutter",
         "url_name": "flutter",
         "redirect": "https://flutter.dev/"
@@ -45,9 +50,19 @@
         "redirect": "https://fr.wikipedia.org/wiki/JavaScript"
     },
     {
+        "name": "MATLAB",
+        "url_name": "matlab",
+        "redirect": "https://fr.mathworks.com/products/matlab.html"
+    },
+    {
         "name": "MySQL",
         "url_name": "my-sql",
         "redirect": "https://www.mysql.com/"
+    },
+    {
+        "name": "OCaml",
+        "url_name": "o-caml",
+        "redirect": "https://ocaml.org/"
     },
     {
         "name": "OpenGL",
@@ -58,6 +73,11 @@
         "name": "PHP",
         "url_name": "php",
         "redirect": "https://www.php.net/"
+    },
+    {
+        "name": "Processing",
+        "url_name": "processing",
+        "redirect": "https://processing.org/"
     },
     {
         "name": "Python",
