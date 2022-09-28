@@ -85,6 +85,16 @@
         "redirect": "https://www.python.org/"
     },
     {
+        "name": "R",
+        "url_name": "r",
+        "redirect": "https://www.r-project.org/"
+    },
+    {
+        "name": "RStudio",
+        "url_name": "r-studio",
+        "redirect": "https://www.rstudio.com/"
+    },
+    {
         "name": "Sass",
         "url_name": "sass",
         "redirect": "https://sass-lang.com/"
