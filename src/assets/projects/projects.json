@@ -82,5 +82,17 @@
     "cover_img": "https://quantumcode.company/images/fourier_series_evolver/cover.png",
     "card_img": "https://quantumcode.company/images/fourier_series_evolver/card.png",
     "github": "https://github.com/quantumcode-martin/fourier-series-evolver"
+  },
+  {
+    "id": 6,
+    "name": "Self-Driving Cars",
+    "url_name": "self_driving_cars",
+    "techs": ["unity", "c-sharp", "python"],
+    "starting_date": "2015",
+    "ending_date": "2016",
+    "is_school_project": true,
+    "short": "Self-Driving cars in simulated urban space using the NEAT algorithm",
+    "cover_img": "https://quantumcode.company/images/self_driving_cars/cover.png",
+    "card_img": "https://quantumcode.company/images/self_driving_cars/card.png"
   }
 ]
