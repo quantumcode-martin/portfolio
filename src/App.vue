@@ -11,6 +11,16 @@
 import ParticleVue from './components/ParticleVue.vue'
 export default {
   name: 'App',
+  // metaInfo () {
+  //   return {
+  //     title: 'Martin Hell Portfolio',
+  //     meta: [
+  //       { name: 'description', content: 'Martin Hell\'s portfolio, student in Computer Science' },
+  //       { property: 'og:title', content: 'Martin Hell - CS Engineer' }
+
+  //     ]
+  //   }
+  // },
   components: { ParticleVue }
 }
 </script>

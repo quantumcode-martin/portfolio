@@ -68,7 +68,6 @@ export default {
   props: {
     projectName: String
   },
-
   data () {
     return {
       scTimer: 0,
@@ -94,6 +93,7 @@ export default {
       this.projectBody = undefined
       // console.log(error)
     })
+    document.title = this.project.name
   },
 
   mounted () {

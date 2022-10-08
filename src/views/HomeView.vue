@@ -25,6 +25,9 @@ export default {
     EmailForm,
     SkillsSection,
     EducationSection
+  },
+  created () {
+    document.title = 'Martin Hell - CS Engineering'
   }
 }
 </script>
