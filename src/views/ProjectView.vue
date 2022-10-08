@@ -94,6 +94,34 @@ export default {
       // console.log(error)
     })
     document.title = this.project.name
+    // Remove any stale meta tags from the document using the key attribute we set below.
+    Array.from(document.querySelectorAll('[dynamic-meta]')).map(el => el.parentNode.removeChild(el))
+
+    const metaTags = [
+      {
+        name: 'description',
+        content: this.project.short
+      },
+      {
+        property: 'og:description',
+        content: this.project.short
+      },
+      {
+        property: 'og:image',
+        content: this.project.cover_img
+      }
+    ]
+    // Turn the meta tag definitions into actual elements in the head.
+    metaTags.map(tagDef => {
+      const tag = document.createElement('meta')
+
+      Object.keys(tagDef).forEach(key => {
+        tag.setAttribute(key, tagDef[key])
+      })
+      // We use this to track which meta tags we create so we don't interfere with other ones.
+      tag.setAttribute('dynamic-meta', '')
+      return tag
+    }).forEach(tag => document.head.appendChild(tag))
   },
 
   mounted () {
