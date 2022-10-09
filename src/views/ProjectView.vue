@@ -107,6 +107,10 @@ export default {
         content: this.project.short
       },
       {
+        property: 'og:url',
+        content: 'https://martinhell.quantumcode.company/project/' + this.project.url_name
+      },
+      {
         property: 'og:image',
         content: this.project.cover_img
       }

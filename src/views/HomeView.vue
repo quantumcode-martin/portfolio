@@ -39,6 +39,10 @@ export default {
         content: 'Here is my personal porfolio.'
       },
       {
+        property: 'og:url',
+        content: 'https://martinhell.quantumcode.company'
+      },
+      {
         property: 'og:image',
         content: 'https://quantumcode.company/images/portfolio_header.png'
       }
