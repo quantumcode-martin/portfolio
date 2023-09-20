@@ -8,8 +8,8 @@
     "ending_date": "",
     "is_school_project": false,
     "short": "An infinite 2D city builder made with Godot Engine",
-    "cover_img": "https://quantumcode.company/images/reignscape.png",
-    "card_img": "https://quantumcode.company/images/reignscape.png",
+    "cover_img": "https://qtmcode.com/images/reignscape.png",
+    "card_img": "https://qtmcode.com/images/reignscape.png",
     "github": null,
     "live": "https://www.patreon.com/posts/reignscape-v0-2-58664844",
     "demo": "https://youtube.com/playlist?list=PLQOnbVybQMgPhl75-Tw18y_2DDSjC4C5J"
@@ -23,10 +23,10 @@
     "ending_date": "",
     "is_school_project": false,
     "short": "An idle game that puts you in the shoes of a citizen living under a tyrannical government",
-    "cover_img": "https://quantumcode.company/images/idle_killer/idle_killer_banner.png",
-    "card_img": "https://quantumcode.company/images/idlekiller.png",
+    "cover_img": "https://qtmcode.com/images/idle_killer/idle_killer_banner.png",
+    "card_img": "https://qtmcode.com/images/idlekiller.png",
     "github": null,
-    "live": "https://quantumcode.company/idle_killer/join_alpha/"
+    "live": "https://qtmcode.com/idle_killer/join_alpha/"
   },
   {
     "id": 2,
@@ -37,8 +37,8 @@
     "ending_date": "",
     "is_school_project": false,
     "short": "A multiverse platformer... Winner of the Godot Fire Jam",
-    "cover_img": "https://quantumcode.company/images/lip/lip_banner.png",
-    "card_img": "https://quantumcode.company/images/lip_card.png",
+    "cover_img": "https://qtmcode.com/images/lip/lip_banner.png",
+    "card_img": "https://qtmcode.com/images/lip_card.png",
     "github": null,
     "live": "https://quantum-martin.itch.io/lost-in-parallels",
     "demo": "https://youtu.be/ORqz2aXvFoM"
@@ -52,8 +52,8 @@
     "ending_date": "Now",
     "is_school_project": false,
     "short": "An open sourced web app to create, share and memorize your chess opening repertoires",
-    "cover_img": "https://quantumcode.company/images/chess_brain/chess_brain_cover.png",
-    "card_img": "https://quantumcode.company/images/chess_brain/chess_brain_card.png",
+    "cover_img": "https://qtmcode.com/images/chess_brain/chess_brain_cover.png",
+    "card_img": "https://qtmcode.com/images/chess_brain/chess_brain_card.png",
     "github": "https://github.com/quantumcode-martin/chess-brain"
   },
   {
@@ -65,8 +65,8 @@
     "ending_date": "",
     "is_school_project": true,
     "short": "Exploring artificial intelligence using intuitive visualizations",
-    "cover_img": "https://quantumcode.company/images/explore_ai/explore_ai_cover.png",
-    "card_img": "https://quantumcode.company/images/explore_ai/explore_ai_card.png",
+    "cover_img": "https://qtmcode.com/images/explore_ai/explore_ai_cover.png",
+    "card_img": "https://qtmcode.com/images/explore_ai/explore_ai_card.png",
     "github": "https://github.com/quantumcode-martin/explore-ai",
     "demo": "https://youtube.com/playlist?list=PLQOnbVybQMgNV2GfxSuAXXXYpFLKMqCNb"
   },
@@ -79,8 +79,8 @@
     "ending_date": "",
     "is_school_project": false,
     "short": "Using genetic algorithms and visualizations to evolve fourier series",
-    "cover_img": "https://quantumcode.company/images/fourier_series_evolver/cover.png",
-    "card_img": "https://quantumcode.company/images/fourier_series_evolver/card.png",
+    "cover_img": "https://qtmcode.com/images/fourier_series_evolver/cover.png",
+    "card_img": "https://qtmcode.com/images/fourier_series_evolver/card.png",
     "github": "https://github.com/quantumcode-martin/fourier-series-evolver"
   },
   {
@@ -92,7 +92,7 @@
     "ending_date": "2016",
     "is_school_project": true,
     "short": "Self-Driving cars in simulated urban space using the NEAT algorithm",
-    "cover_img": "https://quantumcode.company/images/self_driving_cars/cover.png",
-    "card_img": "https://quantumcode.company/images/self_driving_cars/card.png"
+    "cover_img": "https://qtmcode.com/images/self_driving_cars/cover.png",
+    "card_img": "https://qtmcode.com/images/self_driving_cars/card.png"
   }
 ]

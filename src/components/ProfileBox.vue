@@ -5,9 +5,9 @@
       </span>
       </h2>
       <p>
-        I am a final year computer science student at Telecom Nancy.
+        Data Engineer at Glint Solar.
         <br/>
-        I am also looking for an internship.
+        Working on extra projects...
       </p>
       <div class="buttons">
         <a href="#projects" class="btn-red ma-1"><i class="fas fa-code"></i> Projects</a>

@@ -5,11 +5,11 @@
     <p>
         I used Python to learn about neural networks and genetic algorithms.
     </p>
-    <img src="https://quantumcode.company/images/self_driving_cars/neural_network.png" alt="Neural Network">
+    <img src="https://qtmcode.com/images/self_driving_cars/neural_network.png" alt="Neural Network">
     <p>
         I was able to observe on a simple example the non-convolution of the fitness function, which introduces genetic algorithms.
     </p>
-    <img src="https://quantumcode.company/images/self_driving_cars/genetic_algorithm.png" alt="Non convolution and Genetic Algorithms">
+    <img src="https://qtmcode.com/images/self_driving_cars/genetic_algorithm.png" alt="Non convolution and Genetic Algorithms">
     
     <h2>The NEAT algorithm</h2>
     <p>
@@ -25,12 +25,12 @@
         The car is a 3D model it can steer, accelerate and break.
         I added 5 sensors to estimate the distance to obstacles.
     </p>
-    <img src="https://quantumcode.company/images/self_driving_cars/car.png" alt="3D Car">
+    <img src="https://qtmcode.com/images/self_driving_cars/car.png" alt="3D Car">
     <h3>Simulating an Urban Area</h3>
     <p>
         I used satellite vues of Montpellier (France) and applied a countouring to generate 3D models corresponding to the urban area accessible to cars.
     </p>
-    <img src="https://quantumcode.company/images/self_driving_cars/urban_area.png" alt="Urban Area Contouring">
+    <img src="https://qtmcode.com/images/self_driving_cars/urban_area.png" alt="Urban Area Contouring">
     
     <h2>Experiments</h2>
     <h3>Using "doors" as rewards</h3>
@@ -39,14 +39,14 @@
         Given the path, a common practice is to place "doors" regularly along the path.
         Every time a car passes through a door, it gets rewarded. Every collision causes a malus.      
     </p>
-    <img src="https://quantumcode.company/images/self_driving_cars/doors_rewards.png" alt="Doors as Rewards">
+    <img src="https://qtmcode.com/images/self_driving_cars/doors_rewards.png" alt="Doors as Rewards">
 
     <p>
         After some generations, we can observe the cars driving and progressing along the path, avoiding walls.
         We can even observe the speciation done by the NEAT algorithm by coloring the cars in a family.
     </p>
 
-    <img src="https://quantumcode.company/images/self_driving_cars/speciation.png" alt="Speciation">
+    <img src="https://qtmcode.com/images/self_driving_cars/speciation.png" alt="Speciation">
     
     <p>
         The problem is that the car cannot learn to behave differently at different intersections.
@@ -59,17 +59,17 @@
         My idea to solve this was to place intersections structures at each intersection.
         Those structures are made of an area and a point for each "direction".
     </p>
-    <img src="https://quantumcode.company/images/self_driving_cars/intersections.png" alt="Intersections">
+    <img src="https://qtmcode.com/images/self_driving_cars/intersections.png" alt="Intersections">
     <p>
         Then, as we know the path, the car is able to know what direction it should go at each intersection.
         In order to give this information to the car I have defined the angle between the velocity and the desired intersection exit.
         This parameter is added to the neural network as an input.
     </p>
-    <img src="https://quantumcode.company/images/self_driving_cars/trivium_angle.png" alt="The Angle Computation">
+    <img src="https://qtmcode.com/images/self_driving_cars/trivium_angle.png" alt="The Angle Computation">
     <p>
         As a result the cars are "attracted" toward the desired exit.
     </p>
-    <img src="https://quantumcode.company/images/self_driving_cars/attracted_cars.png" alt="Attracted Cars">
+    <img src="https://qtmcode.com/images/self_driving_cars/attracted_cars.png" alt="Attracted Cars">
     <p>
         But the effect is not strong enough, the cars are "too much focused" on the first thing they have to learn: avoid obstacles.
         And so the effect of the exit angle is to small.
